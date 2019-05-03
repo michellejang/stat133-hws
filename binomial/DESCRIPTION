@@ -1,0 +1,12 @@
+Package: binomial
+Type: Package
+Title: Binomial Random Variable Calculations
+Version: 0.1.0
+Author: Michelle Jang
+Maintainer: Michelle Jang <michhjang@berkeley.edu>
+Description: This package implements functions to find the probability of a Binomial Random Variable and other related calculations.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr

@@ -1,0 +1,56 @@
+---
+title: "README"
+author: "Michelle Jang"
+date: "5/3/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## General Overview
+
+This package "binomial" implements functions to calculate the probability distribution of a Binomial Random Variable as well as other related calculations like mean, mode, variance, skewness, and kurtosis. 
+
+## Installation
+
+Install the package via Github and the package "devtools"
+
+```{r}
+install.packages("devtools")
+
+devtools::install_github("michellejang/binomial")
+```
+
+## Usage
+
+```{r}
+library(binomial)
+
+bin_choose(10, 5)
+
+bin_probability(10, 5, 0.5)
+
+x <- bin_distribution(10, 0.5)
+
+plot(x)
+
+y <- bin_cumulative(10, 0.5)
+
+plot(y)
+
+z <- bin_var(10, 0.5)
+
+summary(z)
+
+bin_mean(10, 0.5)
+
+bin_variance(10, 0.5)
+
+bin_mode(10, 0.5)
+
+bin_skewness(10, 0.5)
+
+bin_kurtosis(10, 0.5)
+```
